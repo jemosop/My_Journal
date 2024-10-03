@@ -12,7 +12,7 @@ import com.example.myjournal.utilities.DATABASE_NAME
 @Database(entities = arrayOf(Note::class) , version = 1, exportSchema = false)
  abstract class NoteDatabase : RoomDatabase() {
 
-     abstract fun getNoteDao(): Dao
+     abstract fun getNoteDao(): NoteDao
 
      companion object {
          @Volatile
