@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), NotesAdapter.notesClickListener, Popup
     lateinit var adapter: NotesAdapter
     lateinit var noteViewModel: NoteViewModel
     lateinit var noteSelected: Note
-    private var notesList = ArrayList<Note>()  // Declare and initialize an empty list
+    private var notesList = ArrayList<Note>()
 
     private val updateNote =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
